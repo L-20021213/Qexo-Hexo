@@ -45,8 +45,8 @@ def get_cdn():
     try:
         cdn_prev = SettingModel.objects.get(name="CDN_PREV").content
     except:
-        save_setting("CDN_PREV", "https://cdn1.tianli0.top/npm/")
-        cdn_prev = "https://cdn1.tianli0.top/npm/"
+        save_setting("CDN_PREV", "https://jsdelivr.pai233.top/npm/")
+        cdn_prev = "https://jsdelivr.pai233.top/npm/"
     return cdn_prev
 
 
@@ -78,14 +78,14 @@ def get_custom_config():
         context["QEXO_LOGO"] = SettingModel.objects.get(name="QEXO_LOGO").content
     except:
         save_setting('QEXO_LOGO',
-                     'https://cdn1.tianli0.top/npm/qexo-static@1.4.0/assets' +
+                     'https://jsdelivr.pai233.top/npm/qexo-static@1.4.0/assets' +
                      '/img/brand/qexo.png')
         context["QEXO_LOGO"] = SettingModel.objects.get(name="QEXO_LOGO").content
     try:
         context["QEXO_ICON"] = SettingModel.objects.get(name="QEXO_ICON").content
     except:
         save_setting('QEXO_ICON',
-                     'https://cdn1.tianli0.top/npm/qexo-static@1.4.0/assets' +
+                     'https://jsdelivr.pai233.top/npm/qexo-static@1.4.0/assets' +
                      '/img/brand/favicon.ico')
         context["QEXO_ICON"] = SettingModel.objects.get(name="QEXO_ICON").content
     return context
