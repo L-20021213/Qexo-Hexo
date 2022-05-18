@@ -9,16 +9,16 @@ from math import ceil
 
 
 def page_404(request, exception):
-    return render(request, 'home/page-404.html', {"cdn_prev": "https://cdn.jsdelivr.net/npm/"})
+    return render(request, 'home/page-404.html', {"cdn_prev": "https://cdn1.tianli0.top/npm/"})
 
 
 def page_403(request, exception):
-    return render(request, 'home/page-403.html', {"cdn_prev": "https://cdn.jsdelivr.net/npm/"})
+    return render(request, 'home/page-403.html', {"cdn_prev": "https://cdn1.tianli0.top/npm/"})
 
 
 def page_500(request):
     return render(request, 'home/page-500.html',
-                  {"error": "程序遇到了错误！", "cdn_prev": "https://cdn.jsdelivr.net/npm/"})
+                  {"error": "程序遇到了错误！", "cdn_prev": "https://cdn1.tianli0.top/npm/"})
 
 
 def login_view(request):
